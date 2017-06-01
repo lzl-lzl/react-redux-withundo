@@ -26,7 +26,7 @@ let AddTodo = ({
           input = node
         }} />
         <button type="submit">
-          Add 任务 Todo
+          添加 任务 Todo
         </button>
 
         <button type="" onClick={e=>{
@@ -35,7 +35,7 @@ let AddTodo = ({
            dispatch(toggleImgs())
            console.log('click this bottom')
         }}>
-          改变
+          显示隐藏
         </button>
       </form>
     </div>

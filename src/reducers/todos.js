@@ -1,5 +1,10 @@
 import undoable from 'redux-undo'
-
+let stateFirst = {
+  id: 4,
+  src: 'uisdc-color-1.jpg',
+  text: 'uisdc-color-1.jpg',
+  completed: false
+}
 const todo = (state, action) => {
   switch (action.type) {
     case 'ADD_TODO':
@@ -23,7 +28,7 @@ const todo = (state, action) => {
   }
 }
 
-const todos = (state = [], action) => {
+const todos = (state = [stateFirst], action) => {
   switch (action.type) {
     case 'ADD_TODO':
       return [

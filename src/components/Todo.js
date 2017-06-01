@@ -1,6 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+const spanStyle = {
+  display: 'block',
+  position: 'absolute',
+  top: '50%',
+  left: '50%'
+}
 const Todo = ({
   onClick,
   completed,
@@ -12,14 +18,17 @@ const Todo = ({
   }
   style = {
     {
-      textDecoration: completed ? 'line-through' : 'none'
+      textDecoration: completed ? 'line-through' : 'none',
+      position: 'relative'
     }
   } > {
-    show + ''
+    show ? '显示图' : '隐藏'
   }
-  <img src={src} style={{display: !show ? 'none' : 'block' }}/> < br / > {
+  <img src={src} style={{display: !show ? 'none' : 'block' ,width:completed?'160px':'auto',opacity:completed?'.2':'1'}}/> < span style = {
+    completed ? spanStyle : {}
+  } > {
     text
-  } < /li>  
+  } < /span>  < /li >
 )
 
 Todo.propTypes = {

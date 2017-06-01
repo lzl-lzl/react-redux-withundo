@@ -5,11 +5,12 @@ import VisibleTodoList from '../containers/VisibleTodoList'
 import UndoRedo from '../containers/UndoRedo'
 
 const App = () => (
-  <div>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
+	<div>
+    <AddTodo /> 
+     <Footer />
     <UndoRedo />
+    <VisibleTodoList />
+  
   </div>
 )
 

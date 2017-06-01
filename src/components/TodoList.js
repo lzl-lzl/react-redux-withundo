@@ -8,9 +8,9 @@ const TodoList = ({
   show
 }) => (
   <ul>
-    {
+    {/* {
       show + ''
-    }
+    }*/}
     {todos.map(todo =>
       <Todo
         key={todo.id}
